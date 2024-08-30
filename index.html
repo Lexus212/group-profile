@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-border">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h2 id="name">Ace Lexuz Landrito</h2>
+            <p id="about">A short description about yourself.</p>
+            <p id="moreText" style="display:none;">This is the extended description that appears when you click 'View More'.</p>
+            <button id="viewMoreBtn" onclick="toggleViewMore()">View More</button>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <textarea id="aboutInput" placeholder="Write about yourself..."></textarea>
+            <button onclick="updateProfile()">Update Profile</button>
+            <a href="https://www.linkedin.com/in/ace-landrito-71a178324?trk=blended-typeahead" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn" class="linkedin-icon">
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
